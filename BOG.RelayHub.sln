@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SolutionAdmin", "_SolutionAdmin", "{9F0F38D1-59A4-460F-A75E-30EBE1D3BEDB}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		INSTRUCTIONS.md = INSTRUCTIONS.md
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BOG.RelayHub.Client", "BOG.RelayHub.Client\BOG.RelayHub.Client.csproj", "{A7944757-8724-4A13-ADC4-17A3E5712126}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BOG.RelayHub.ConsumerDemo", "BOG.RelayHub.ConsumerDemo\BOG.RelayHub.ConsumerDemo.csproj", "{C494E212-3A86-4480-AAC1-4045891DB22C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BOG.RelayHub.App", "BOG.RelayHub.App\BOG.RelayHub.App.csproj", "{B31BEBEE-0220-43DD-A537-E74F5A074D7F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BOG.RelayHub.Common", "BOG.RelayHub.Common\BOG.RelayHub.Common.csproj", "{0AC3B8CB-01A2-46B0-9244-D7EDC3407C4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{23F0238D-3A5D-4192-86A2-5503B156BC57}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7944757-8724-4A13-ADC4-17A3E5712126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7944757-8724-4A13-ADC4-17A3E5712126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7944757-8724-4A13-ADC4-17A3E5712126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7944757-8724-4A13-ADC4-17A3E5712126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C494E212-3A86-4480-AAC1-4045891DB22C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C494E212-3A86-4480-AAC1-4045891DB22C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C494E212-3A86-4480-AAC1-4045891DB22C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C494E212-3A86-4480-AAC1-4045891DB22C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B31BEBEE-0220-43DD-A537-E74F5A074D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31BEBEE-0220-43DD-A537-E74F5A074D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31BEBEE-0220-43DD-A537-E74F5A074D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31BEBEE-0220-43DD-A537-E74F5A074D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AC3B8CB-01A2-46B0-9244-D7EDC3407C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC3B8CB-01A2-46B0-9244-D7EDC3407C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC3B8CB-01A2-46B0-9244-D7EDC3407C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC3B8CB-01A2-46B0-9244-D7EDC3407C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FE5AE57-944D-4A55-ADC5-A0FB3CE46FDA}
+	EndGlobalSection
+EndGlobal

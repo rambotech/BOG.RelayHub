@@ -1,0 +1,34 @@
+{
+	"profiles": {
+		"https": {
+			"commandName": "Project",
+			"commandLineArgs": "--hostedByIIS false --FreshStart false --Listeners http://*:5050 --SecurityDelaySecondsFactor 5 --SecurityMaxInvalidTokenAttempts 5",
+			"launchBrowser": false,
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			},
+			"dotnetRunMessages": true,
+			"applicationUrl": "http://localhost:5050",
+			"nativeDebugging": true
+		},
+		"WSL": {
+			"commandName": "WSL2",
+			"launchBrowser": true,
+			"launchUrl": "https://localhost:5050/swagger",
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development",
+				"ASPNETCORE_URLS": "https://localhost:5050;http://localhost:5272"
+			},
+			"distributionName": ""
+		}
+	},
+	"$schema": "http://json.schemastore.org/launchsettings.json",
+	"iisSettings": {
+		"windowsAuthentication": false,
+		"anonymousAuthentication": true,
+		"iisExpress": {
+			"applicationUrl": "http://localhost:37358",
+			"sslPort": 44356
+		}
+	}
+}

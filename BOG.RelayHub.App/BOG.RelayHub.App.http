@@ -1,0 +1,100 @@
+#####################################
+# Testing for Relay Hub endpoints
+#####################################
+
+@host = http://sbc07:5050
+@channel = RESEARCHER-LIBRARY
+@userToken  = RHU-4A483566-B82B-43FE-BB5E-7FBEA74802D4
+@adminToken = RHA-3389A91A-F25C-48EC-A4C9-F3AB05A07065
+@executiveToken = RHE-E9825143-8C1C-4169-9532-8AD4B6AA29E1
+
+# @userToken = YourUserAccessTokenValueHere
+# @adminToken = YourAdminAccessTokenValueHere
+# @executiveToken = YourExecutiveAccessTokenValueHere
+
+### Don't know (404)
+GET {{host}}/api/v1 HTTP/1.1
+
+#####################################
+### Endpoints
+#####################################
+
+###### Executive Auth
+GET {{host}}/api/v1/executive/channels/list HTTP/1.1
+AuthToken: {{executiveToken}}
+
+###### Owner Management
+
+### EXISTS?
+GET {{host}}/api/v1/channel/{{channel}} HTTP/1.1
+AuthToken: {{adminToken}}
+
+### CREATE
+POST {{host}}/api/v1/channel/{{channel}} HTTP/1.1
+AuthToken: {{adminToken}}
+
+### REMOVE 
+DELETE {{host}}/api/v1/channel/{{channel}} HTTP/1.1
+AuthToken: {{adminToken}}
+
+### Enqueue Payload
+POST {{host}}/api/v1/queue/{{channel}}/_default HTTP/1.1
+AuthToken: {{userToken}}
+Content-Type: text/plain
+
+The quick brown fox jumped over the lazy dogs back  -- JS
+
+### Dequeue Payload
+GET {{host}}/api/v1/queue/{{channel}}/_default HTTP/1.1
+AuthToken: {{userToken}}
+
+### Enqueue Payload
+POST {{host}}/api/v1/queue/Q/x4 HTTP/1.1
+AuthToken: {{userToken}}
+Content-Type: text/plain
+
+The quick brown fox jumped over the lazy dogs back
+-- JS
+
+The quick brown fox jumped over the lazy dogs back
+-- JS
+
+### Dequeue Payload
+GET {{host}}/api/v1/queue/{{channel}}/x4 HTTP/1.1
+AuthToken: {{userToken}}
+
+### List Reference
+GET {{host}}/api/v1/references/{{channel}} HTTP/1.1
+AuthToken: {{userToken}}
+
+### Get Reference 1
+GET {{host}}/api/v1/reference/{{channel}}/ref1 HTTP/1.1
+AuthToken: {{userToken}}
+
+### Set Reference 1
+POST {{host}}/api/v1/reference/{{channel}}/ref1 HTTP/1.1
+Content-Type: text/plain
+AuthToken: {{userToken}}
+
+Reference 1 content
+
+### Get Reference 2
+GET {{host}}/api/v1/reference/{{channel}}/ref2 HTTP/1.1
+AuthToken: {{userToken}}
+
+### Set Reference 2
+POST {{host}}/api/v1/reference/{{channel}}/ref2 HTTP/1.1
+Content-Type: text/plain
+AuthToken: {{userToken}}
+
+Reference 2 content
+
+### Delete Reference 1
+DELETE {{host}}/api/v1/reference/{{channel}}/ref1 HTTP/1.1
+AuthToken: {{userToken}}
+
+### Delete Reference 2
+DELETE {{host}}/api/v1/reference/{{channel}}/ref2 HTTP/1.1
+AuthToken: {{userToken}}
+
+

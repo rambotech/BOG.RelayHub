@@ -1,0 +1,36 @@
+{
+  "profiles": {
+    "ConsumerDemo (PHYSICULO)": {
+      "commandName": "Project",
+      "commandLineArgs": "http://physiculo:5050"
+    },
+    "ConsumerDemo (REGIUM)": {
+      "commandName": "Project",
+      "commandLineArgs": "http://regium:5050"
+    },
+    "ConsumerDemo (OCULUS)": {
+      "commandName": "Project",
+      "commandLineArgs": "http://oculus:5050"
+    },
+    "ConsumerDemo (REGINA)": {
+      "commandName": "Project",
+      "commandLineArgs": "http://regina:5050"
+    },
+    "ConsumerDemo (SBC07)": {
+      "commandName": "Project",
+      "commandLineArgs": "http://sbc07:5050"
+    },
+    "ConsumerDemo (SBC12)": {
+      "commandName": "Project",
+      "commandLineArgs": "http://sbc12:5050"
+    },
+    "ConsumerDemo (LOCALHOST_5050)": {
+      "commandName": "Project",
+      "commandLineArgs": "http://localhost:5050"
+    },
+    "ConsumerDemo (LOCALHOST_7172)": {
+      "commandName": "Project",
+      "commandLineArgs": "http://localhost:7172"
+    }
+  }
+}
